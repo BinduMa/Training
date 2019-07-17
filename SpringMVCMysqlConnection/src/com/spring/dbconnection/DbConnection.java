@@ -82,7 +82,7 @@ public class DbConnection{
 			if(con2 != null)
 				System.out.println("Connection2 is success");*/
 			Statement stmt=con.createStatement();  
-			ResultSet rs=stmt.executeQuery("select * from actor where actor_id =10");
+			ResultSet rs=stmt.executeQuery("select * from actor where actor_id <=10");
 			while(rs.next()){
 				//String s = "rs.getString(2)+ rs.getObject(3)";
 				System.out.println("String print:"+rs.getString(2)+ rs.getObject(3));
@@ -119,7 +119,7 @@ public class DbConnection{
 				if(con2 != null)
 					System.out.println("Connection2 is success");*/
 				Statement stmt=con.createStatement();  
-				ResultSet rs=stmt.executeQuery("select * from actor where actor_id =10");
+				ResultSet rs=stmt.executeQuery("select * from actor where actor_id =1");
 				while(rs.next()){
 					//String s = "rs.getString(2)+ rs.getObject(3)";
 					System.out.println("String print:"+rs.getString(2)+ rs.getObject(3));
