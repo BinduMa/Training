@@ -24,7 +24,7 @@
 		<property name="maxActive" value="3"/>
 </bean>
 <bean id="exDao" class="com.spring.dbconnection.ExDao">    
-<property name="datasource" ref="ds"></property>
+<property name="datasource" ref="ds"/>
 </bean>
 <!-- <bean name="/connection" class="com.spring.dbconnection.DbConnection">
 		<property name="dataSource" ref="dmds"></property>
